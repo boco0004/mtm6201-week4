@@ -26,10 +26,44 @@
             <h2>Same size / different resolution</h2>
             <img
             srcset="images/dummy_320x320.png,
-                    images/dummy_640x640.png 2x"
-            
+                    images/dummy_640x640.png 2x,
+                    images/dummy_960x960.png 3x"
             
             src="images/dummy_640x640.png" alt="placeholder image" class="avatar">
+        </section>
+        <section>
+            <h2>Art Direction</h2>
+            <picture>
+                <source srcset="images/fall-dog-1200.jpg"
+                         media="(min-width: 900px)">
+                
+                <source srcset="images/fall-dog-900.jpg"
+                         media="(min-width: 640px)">
+
+                <source srcset="images/fall-dog-640.jpg"
+                         media="(min-width: 320px)">
+
+                 <img src="images/fall-dog-900.jpg" alt="image of dog in its bed">
+            </picture>
+            <picture>
+                <source srcset="images/fall-dog-1200.jpg,
+                                images/fall-dog-1200.jpg 1.5x,
+                                images/fall-dog-2400.jpg 2x"
+                         media="(min-width: 900px)">
+
+                <source srcset="images/fall-dog-900.jpg,
+                             images/fall-dog-1350.jpg 1.5x,
+                             images/fall-dog-1800.jpg 2x"
+                         media="(min-width: 640px)">
+
+                <source srcset="images/fall-dog-900.jpg,
+                             images/fall-dog-1350.jpg 1.5x,
+                             images/fall-dog-1800.jpg 2x"
+                         media="(min-width: 320px)">
+
+
+                <img src="images/fall-dog-900.jpg" alt="image of dog in its bed">
+            </picture>
         </section>
     </div>
 </body>
